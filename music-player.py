@@ -6,10 +6,10 @@ from mutagen.id3 import ID3
 import mysql.connector
 
 mydb = mysql.connector.connect(
-  host="localhost",
-  user="root",
-  passwd="",
-  database="music"
+  host="INSERT_HOST_NAME_HERE",
+  user="INSERT_USERNAME_HERE",
+  passwd="INSERT_PASSWORD_HERE",
+  database="ENTER DATABASE NAME HERE"
 )
 
 mycursor = mydb.cursor()
