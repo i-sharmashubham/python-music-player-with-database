@@ -36,7 +36,7 @@ def addsong(event):
           audio=ID3(realdir)
           name=audio["TIT2"].text[0]
           mycursor.execute("INSERT INTO musiclist(path, name) VALUES(%s,%s)",(realdir,name))
-          mydb.commit()
+          mydb.commit() 
 
     loadsong()
 
